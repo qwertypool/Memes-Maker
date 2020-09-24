@@ -11,6 +11,8 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "build:css": "postcss src/index.css -o src/tailwind.css",
+    "watch:css": "postcss src/index.css -o src/tailwind.css -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +32,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^8.0.0",
+    "tailwindcss": "^1.8.10"
   }
 }
