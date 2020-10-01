@@ -40,7 +40,9 @@ class Mememaker extends Component{
 
     render(){
         return(
-             <div className="px-5 mar-top items-center text-center">
+            <div className="inverted" style={{marginTop:"0rem"}}>
+                <h1 style={{color:"transparent"}}>hii</h1>
+             <div className="px-5 mar-top items-center text-center inverted">
                 <form onSubmit={this.handleSubmit}>
                     <input className="bg-white rounded border border-gray-400 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4"
                         type="text"
@@ -65,7 +67,7 @@ class Mememaker extends Component{
                     <h2 className="bottom">{this.state.bottomLine}</h2>
     </div>
     </section>
-                  
+    </div>   
             </div>
         )
     }

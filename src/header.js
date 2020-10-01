@@ -1,8 +1,24 @@
-import React from "react"
-
+import React,{useState} from "react"
 function Nav(){
+  const col="bg-teal-500"
+const[bg,setBg]=useState(col)
+const[count,setCount]=useState("1")
+const dark=()=>{
+  if(count==="1"){
+  setBg("bg-gray-900")
+   setCount("2")  
+}
+else{
+  setBg("bg-teal-500")
+  setCount("1")
+}
+
+    document.querySelectorAll('.inverted').forEach((result)=>{
+      result.classList.toggle('invert')
+    })
+}
     return(
-        <header class="text-gray-500 bg-gray-900 body-font">
+        <header class={`text-gray-500 ${bg} body-font`}>
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
     
@@ -13,6 +29,10 @@ function Nav(){
       </svg>
       <span class="ml-3 text-xl xl:block lg:hidden">Memes Maker</span>
     </a>
+    <label className="switch" style={{backgroundColor: bg}}>
+             <input type="checkbox" onClick={dark}/>
+              <span className="slider round"></span>
+             </label>
     <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
      
     </div>
