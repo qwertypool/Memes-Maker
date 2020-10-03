@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<h5>Added the dark mode theme</h5>
+
 ## ScreenShot:
 
 ![ipl](https://user-images.githubusercontent.com/36128196/94192393-85375180-fecc-11ea-9a46-f61cc35fb1b1.png)
