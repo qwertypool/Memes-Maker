@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
 import './tailwind.css';
-import NavBar from './Componants/NavBar'
+import Nav from './header.js'
 import Mememaker from './memes-maker'
-const App=()=>
- {
+function App() {
   return (
-  <React.Fragment>
-    <NavBar />
+    <>
+    <Nav />
     <Mememaker />
-    </React.Fragment>
+    </>
   );
 }
 
